@@ -2,13 +2,13 @@ const express = require('express');
 const port = 7676;
 const app = express();
 
-app.get('/', function(req ,res, next){
+app.use('/', function(req ,res, next){
     res.json({
         message:'hello world',
     });
 })
 
-app.get('/test', function(req ,res, next){
+app.use('/test', function(req ,res, next){
     res.json({
         message:'test successfull',
     });
