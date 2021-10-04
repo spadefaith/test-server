@@ -8,6 +8,12 @@ app.use('/', function(req ,res, next){
     });
 })
 
+app.use('/test', function(req ,res, next){
+    res.json({
+        message:'test successfull',
+    });
+})
+
 const server = app.listen(port,function(err){
     if (err){
         console.log(err);
